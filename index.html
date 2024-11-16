@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>De Cabin van Groenland</title>
+</head>
+<body>
+
+    <!-- Bootstrap navbar -->
+
+        <nav class="navbar fixed-top navbar-expand-lg custom-navbar">
+
+            <div class="container-fluid ml-3 mr-3">
+
+                <!-- logo -->
+                <a class="navbar-brand mb-0 h1" href="#">
+                    <img src="images/logo.jpg" width="100" height="100" alt="">
+                </a>
+
+                <!-- Drowpdown menu -->
+
+                <button id="menu-button" class="menu-button" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </button>
+
+                <div id="dropdown-menu" class="dropdown-menu">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#cabin">De Cabin van Groenland</a></li>
+                        <li><a href="#omgeving">De Omgeving</a></li>
+                        <li><a href="#over">Contact</a></li>
+                        <li><a href="#reserveren">Reserveer nu</a></li>
+                    <hr>
+                    </ul>
+                    <ul class="mini-menu">
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="https://www.instagram.com/decabinvangroenland/" target="_blank">Instagram</a></li>
+                        <li><a href="">Veelgestelde vragen</a></li>
+                        <li><a href="">Privacyverklaring</a></li>
+                        <li><a href="">Algemene voorwaarden</a></li>
+                    </ul>
+                <div>
+                </div>
+            </div>
+            
+                <script src="script.js"></script>
+
+
+            </div>
+        </nav>
+    
+    <!-- header -->
+     <div id="home" class="header-container">
+
+        <div class="header-part-middle">
+            <video autoplay muted loop id="background-video">
+                <source src="/images/videotest2.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="header-part-right">
+            <div class="header-quote">
+                Kom even helemaal tot rust in de Cabin van Groenland.
+            </div>
+            <a href="http://www.marloesdehaan.com"><button class="btn-reserveren">Reserveer nu</button></a>
+        </div>
+     </div>
+
+    <!-- De Cabin van Groenland -->
+    
+    <div id="cabin" class="segment-cabin">
+
+        <h1>De Cabin van Groenland</h1>
+
+        <div class="wrapper">
+
+        <div class="segment-img">
+            <img src="/images/groenland4.png">
+        </div>
+
+        <div class="segment-text">
+            lorem ipsum dolor sit amet. Eos provident amet est quia aperiam eos itaque ipsam At pariatur officiis est aliquid omnis. 33 architecto veritatis est architecto obcaecati sed quos sequi qui blanditiis dolores qui debitis reprehenderit est rerum quaerat et minus dolores. Aut quia dolorum sed illo necessitatibus et porro velit sit possimus molestiae quo officia nisi. Aut suscipit voluptatem sed odit quos hic sint rerum 33 laudantium assumenda sed commodi voluptatem.
+        </div>
+
+    </div>
+
+    </div>
+
+    <hr>
+     
+    <!-- De omgeving -->
+
+    <div id="omgeving" class="segment-omgeving">
+
+        <h1>De omgeving</h1>
+
+        <div class="segment-text">
+            lorem ipsum dolor sit amet. Eos provident amet est quia aperiam eos itaque ipsam At pariatur officiis est aliquid omnis. 33 architecto veritatis est architecto obcaecati sed quos sequi qui blanditiis dolores qui debitis reprehenderit est rerum quaerat et minus dolores. Aut quia dolorum sed illo necessitatibus et porro velit sit possimus molestiae quo officia nisi. Aut suscipit voluptatem sed odit quos hic sint rerum 33 laudantium assumenda sed commodi voluptatem.
+        </div>
+
+        <div class="segment-img">
+            <img src="/images/groenland2.jpg">
+        </div>
+
+    </div>
+
+    <!-- Over ons -->
+
+    <div id="over" class="segment-over">
+
+        <h1>Over ons</h1>
+
+        <div class="wrapper">
+
+        <div class="segment-text">
+            lorem ipsum dolor sit amet. Eos provident amet est quia aperiam eos itaque ipsam At pariatur officiis est aliquid omnis. 33 architecto veritatis est architecto obcaecati sed quos sequi qui blanditiis dolores qui debitis reprehenderit est rerum quaerat et minus dolores. Aut quia dolorum sed illo necessitatibus et porro velit sit possimus molestiae quo officia nisi. Aut suscipit voluptatem sed odit quos hic sint rerum 33 laudantium assumenda sed commodi voluptatem.
+        </div>
+
+
+        <div class="segment-img">
+            <img src="/images/groenland3.jpg">
+        </div>
+
+        </div>
+
+    </div>
+
+    <!-- Reserveren -->
+
+    <div id="reserveren" class="segment-reserveren">
+        
+        <div class="segment-text">Bekijk hier de beschikbaarheid van de cabin en boek direct verblijf</div>
+
+        <div>
+
+            <a href="http://www.marloesdehaan.com"><button class="btn-reserveren">Reserveer nu</button></a>
+    
+        </div>
+
+    </div>
+        
+
+    <!-- Reviews -->
+
+    <div id="reviews" class="segment-reviews">
+
+        <div class="carousel-wrapper">
+
+        <div id="reviewCarousel" class="carousel slide" data-bs-ride="carousel">
+        
+            <!-- Carousel Items -->
+            <div class="carousel-inner">
+                <!-- First Slide -->
+                <div class="carousel-item active">
+                    <div class="card shadow-sm mb-4 mx-auto" style="max-width: 600px;">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="/images/airbnb1.jpg" alt="Profile Picture" class="rounded-circle me-3" width="50" height="50">
+                                <div>
+                                    <h5 class="card-title mb-0">Arti</h5>
+                                    <small class="text-muted">September 2024</small>
+                                </div>
+                            </div>
+                            <p class="card-text">"Een extreem vredig, schoon en comfortabel verblijf op een volledig privéplek, vol prachtig groen, schattige dieren. De hut is precies zoals beschreven en op de foto's. Judith en Juul zijn zeer behulpzaam en snel met hun reacties. We kregen een heerlijk welkomstgeschenk en werden zelfs opgehaald/afgezet van het nabijgelegen station omdat we afhankelijk waren van het openbaar vervoer en de hut een beetje op het platteland ligt. 10/10 aanbevolen."</p>
+                            <div class="d-flex align-items-center">
+                                <div class="text-warning me-2">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <span class="text-muted">5/5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Second Slide -->
+                <div class="carousel-item">
+                    <div class="card shadow-sm mb-4 mx-auto" style="max-width: 600px;">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="/images/airbnb2.jpg" alt="Profile Picture" class="rounded-circle me-3" width="50" height="50">
+                                <div>
+                                    <h5 class="card-title mb-0">Natalie</h5>
+                                    <small class="text-muted">november 2024</small>
+                                </div>
+                            </div>
+                            <p class="card-text">"We hebben hier na onze bruiloft wat rustige en ontspannende dagen doorgebracht. De hut is zo magisch!We hielden van alle kleine, mooie details, planten en het uitzicht op het rustige landschap. Overdag wandelen door de duines of op het strand en ontspannen voor de open haard, 's avonds een boek lezen of bordspellen spelen. Judith en Juul zijn geweldige verhuurders die de tijd nemen om alles uit te leggen en ervoor te zorgen dat je een heerlijk verblijf zult hebben. Ontzettend bedankt! We komen graag nog eens terug."</p>
+                            <div class="d-flex align-items-center">
+                                <div class="text-warning me-2">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <span class="text-muted">5/5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Third Slide -->
+                <div class="carousel-item">
+                    <div class="card shadow-sm mb-4 mx-auto" style="max-width: 600px;">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="/images/airbnb3.jpg" alt="Profile Picture" class="rounded-circle me-3" width="50" height="50">
+                                <div>
+                                    <h5 class="card-title mb-0">Joachim</h5>
+                                    <small class="text-muted">oktober 2024</small>
+                                </div>
+                            </div>
+                            <p class="card-text">"Deze plek en zijn geweldige verhuurders verdienen 5 sterren +!
+                                We werden heel hartelijk verwelkomd door Judith en Juul bij onze aankomst. Ze waren er altijd voor ons met waardevolle tips en informatie. De plek was minstens zo mooi als de foto's en we voelden ons meteen aangekomen en erg comfortabel. Het uitzicht, de rust en het landelijke gebied zorgden ervoor dat we snel konden ontspannen. De Cabin of Greenland biedt alles wat je nodig hebt. De oven is ook erg mooi, wat vooral in het koude seizoen een gezellige warmte verspreidt. Onze oprechte dank gaat naar Judith en Juul, we komen zeker terug!"</p>
+                            <div class="d-flex align-items-center">
+                                <div class="text-warning me-2">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <span class="text-muted">4/5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#reviewCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#reviewCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              </button>
+        </div>
+
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Instagram feed -->
+
+    <div class="segment-insta">
+
+        <div class="wrapper">
+
+            <div>
+           <img src="/images/insta.jpg">
+            </div>
+
+            <div class="segment-insta-text">
+                <p>Volg ons op Instagram voor nog meer prachtige video's en foto's van de cabin.</p>
+                <a href="https://www.instagram.com/decabinvangroenland/" target="_blank"><button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                  </svg> Volg ons op Instagram</button></a>
+            </div>
+
+        </div>
+        </div>
+
+    </div>
+
+        <!-- big image -->
+
+        <div class="big-image">
+            <img src="/images/groenland8.jpg">
+        </div>
+
+    <!-- Footer -->
+
+    <footer class="text-white py-5 footer-custom">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4">
+
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Veelgestelde vragen</a></li>
+                        <li><a href="#" class="text-white">Privacyverklaring</a></li>
+                        <li><a href="#" class="text-white">Algemene Voorwaarden</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    
+
+</body>
+</html>

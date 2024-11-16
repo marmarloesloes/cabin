@@ -1,0 +1,350 @@
+/* colors used
+
+Offwhite: #F4EEEC
+Oranje: #D07F00
+Bruin: #7B4D00
+Groen: #6B803F
+Blauw: #57AAB6
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-margin-top: 120px;
+}
+
+body {
+    background-color: #F4EEEC;
+    overflow-x: hidden;
+}
+
+/* navigation */
+
+.custom-navbar {
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: white;
+}
+
+/* dropdown */
+
+/* Menu Button */
+.menu-button {
+    right: 30px;
+    height: 80px;
+    width: 80px;
+    background-color: #57AAB6;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1000; /* Ensure it's above the menu */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-button:hover {
+    background-color: #4c98a2;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 40px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+/* Rotate first bar */
+.change .bar1 {
+    transform: translateY(17px) rotate(-45deg); /* Move down and rotate */
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate third bar */
+.change .bar3 {
+    transform: translateY(-17px) rotate(45deg); /* Move up and rotate */
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(87, 170, 182, 0.95); /* Full screen with slight transparency */
+    display: flex; /* Hidden by default */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 999; /* Below the button */
+    opacity: 0; /* Initially hidden */
+    transform: translateX(100%); /* Start off-screen to the left */
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.dropdown-menu.active {
+    opacity: 1; /* Make it visible */
+    transform: translateX(0); /* Move into view */
+}
+
+/* Dropdown Menu Items */
+.dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.dropdown-menu li {
+    margin: 20px 0;
+}
+
+.dropdown-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.dropdown-menu a:hover {
+    text-decoration: underline;
+}
+
+/* header */
+
+.header-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.header-logo {
+    width: 8rem;
+}
+
+
+.header-part-middle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+#background-video {
+    object-fit: cover; /* Ensures the video covers the entire container */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.header-part-right {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.4);
+    z-index: 1;
+    padding: 40px;
+}
+
+.header-quote {
+    font-family: Verdana;
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.btn-reserveren {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 3px solid black;
+    border-radius: 10px;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.btn-reserveren:hover {
+    background-color: rgba(170, 222, 230, 1);
+    color: black;
+    border: none;
+}
+
+/* segments */
+
+h1 {
+    color: #7B4D00;
+}
+
+.segment-cabin, .segment-omgeving, .segment-over, .segment-reserveren, .segment-reviews, .segment-insta {
+    width: 100vw;
+    background-color: #F4EEEC;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+
+.segment-text {
+    width: 95%;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Cabin segment */
+
+.segment-cabin h1 {
+    padding-top: 20px;
+}
+
+.wrapper {
+    width: 900px;;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.segment-cabin .segment-img img, .segment-over .segment-img img {
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+.segment-cabin .segment-text, .segment-over .segment-text {
+    width: 50%;
+    text-align: left;
+}
+
+/* de omgeving segment */
+
+ .segment-omgeving .segment-img img {
+    width: 100vw;
+    height: 350px;
+    object-fit: cover;
+}
+
+/* Over ons segment */
+
+
+
+/* Reserveren segment */
+
+.segment-reserveren {
+    background-color: #7B4D00;
+}
+
+.segment-reserveren h1 {
+    color: #F4EEEC;
+    margin-top: 30px;
+}
+
+.segment-reserveren .segment-text {
+    color: #F4EEEC;
+}
+
+.segment-reserveren .btn-reserveren {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 3px solid #F4EEEC;
+    border-radius: 10px;
+    color: #F4EEEC;
+    font-size: 1.5rem;
+    margin-bottom: 60px;
+}
+
+.segment-reserveren .btn-reserveren:hover {
+    background-color: rgba(170, 222, 230, 1);
+    color: black;
+}
+
+/* Review segment */
+
+.carousel-wrapper {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    width: 800px;
+}
+
+.carousel-item {
+    height: 350px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: rgba(87, 170, 182, 1);
+    border-radius: 50%;
+}
+
+/* Instagram segment */
+
+.segment-insta {
+    padding-top: 0px;
+}
+
+.segment-insta img {
+    width: 400px;
+    border-radius: 15px;
+}
+
+.segment-insta-text {
+    width: 90%;
+    padding: 2rem;
+    font-family: Verdana;
+    font-size: 1rem;
+    align-self: flex-start;
+}
+
+.segment-insta-text button {
+    font-size: 1rem;
+    padding: 0.8rem;
+    border-radius: 5px;
+    background-color: #57AAB6;
+    border: none;
+    color: #F4EEEC;
+}
+
+.segment-insta-text button:hover {
+    background-color: rgba(170, 222, 230, 1);
+    color: black;
+    border: none;
+}
+
+/* big image */
+
+.big-image img {
+    width: 100vw;
+    margin-top: 30px;
+}
+
+/* Footer */
+
+.footer-custom {
+    background-color: #57AAB6;
+}
+
+li a {
+    text-decoration: none;
+}
