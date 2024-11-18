@@ -12,6 +12,7 @@ Blauw: #57AAB6
     margin: 0;
     padding: 0;
     scroll-margin-top: 120px;
+    box-sizing: border-box;
 }
 
 body {
@@ -135,13 +136,7 @@ body {
     height: 100vh;
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
 }
-
-.header-logo {
-    width: 8rem;
-}
-
 
 .header-part-middle {
     position: absolute;
@@ -177,7 +172,7 @@ body {
     font-size: 2rem;
     color: black;
     text-align: center;
-    padding: 40px;
+    padding: 0px;
 }
 
 .btn-reserveren {
