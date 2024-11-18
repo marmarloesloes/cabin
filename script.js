@@ -20,3 +20,10 @@ menuItems.forEach((item) => {
 function myFunction(x) {
     x.classList.toggle("change");
   }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var myCarousel = new bootstrap.Carousel(document.getElementById('reviewCarousel'), {
+        interval: 5000,  // Optional: Adjust the interval for the slide duration
+        ride: 'carousel' // Make sure the carousel is automatically cycling
+    });
+});
