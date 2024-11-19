@@ -151,7 +151,7 @@ body {
 
 #video-container {
     height: 100%;
-    width: 100vw;
+    width: 100%;
     background-image: url("images/videocabin.mp4");
     background-color: transparent;
     position: absolute;
@@ -200,6 +200,29 @@ body {
     background-color: rgba(170, 222, 230, 1);
     color: black;
     border: none;
+}
+
+/* Header -losse-pagina */
+
+.header-losse-pagina {
+    width: 100dvw;
+    height: 500px;
+}
+
+.omgeving {
+    background-image: url("images/groenland9.jpg");
+}
+
+.header-losse-pagina h1 {
+    z-index: 999;
+    color: white;
+    padding: 350px 0px 0px 100px;
+}
+
+/* Header Contact */
+
+.contact {
+    background-image: url("images/groenland7.jpg");
 }
 
 /* segments */
@@ -259,6 +282,16 @@ h1 {
     width: 100dvw;
     height: 350px;
     object-fit: cover;
+}
+
+.link {
+    padding-top: 10px;
+    font-size: 1.2rem;
+}
+
+.link a:link, .link a:visited, .link a:active {
+    color: #6B803F;
+    font-weight: bold;
 }
 
 /* Over ons segment */
