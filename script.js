@@ -53,16 +53,3 @@ function nextSlide(){
 document.querySelector('.next').addEventListener('click', e => {
     nextSlide();
 });
-
-// header-height fix //
-
-function adjustHeaderHeight() {
-    const header = document.querySelector('.header-container');
-    header.style.height = `${window.innerHeight}px`; // Dynamically adjust to current viewport height
-}
-
-// Run the function once to set the initial height
-adjustHeaderHeight();
-
-// Add event listener to adjust height on resize (e.g., when the address bar hides/shows)
-window.addEventListener('resize', adjustHeaderHeight);
