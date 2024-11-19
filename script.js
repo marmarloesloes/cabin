@@ -21,9 +21,35 @@ function myFunction(x) {
     x.classList.toggle("change");
   }
 
-  document.addEventListener('DOMContentLoaded', function () {
-    var myCarousel = new bootstrap.Carousel(document.getElementById('reviewCarousel'), {
-        interval: 5000,  // Optional: Adjust the interval for the slide duration
-        ride: 'carousel' // Make sure the carousel is automatically cycling
-    });
+
+  //carousel
+  const slides = document.querySelectorAll('.slide');
+let index = 0;
+
+function prevSlide(){
+    slides[index].classList.remove('active');
+    index--;
+
+    if(index < 0)
+        index = slides.length -1;
+
+    slides[index].classList.add('active');      
+}
+
+document.querySelector('.prev').addEventListener('click', e => {
+    prevSlide();
+});
+
+function nextSlide(){
+    slides[index].classList.remove('active');
+    index++;
+
+    if(index > slides.length -1)
+        index = 0;
+
+    slides[index].classList.add('active');      
+}
+
+document.querySelector('.next').addEventListener('click', e => {
+    nextSlide();
 });
