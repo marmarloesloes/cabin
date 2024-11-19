@@ -179,6 +179,7 @@ body {
     color: black;
     text-align: center;
     padding-bottom: 20px;
+    display: none;
 }
 
 .btn-reserveren {
@@ -188,6 +189,8 @@ body {
     border-radius: 10px;
     color: black;
     font-size: 1.5rem;
+    display: none;
+
 }
 
 .btn-reserveren:hover {
@@ -440,6 +443,7 @@ li a {
 
     .segment-text {
         padding-top: 0.5rem;
+        text-align: center;
     }
 
     .segment-insta-text {
