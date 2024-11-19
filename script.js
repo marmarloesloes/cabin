@@ -53,3 +53,5 @@ function nextSlide(){
 document.querySelector('.next').addEventListener('click', e => {
     nextSlide();
 });
+
+// video header height //
