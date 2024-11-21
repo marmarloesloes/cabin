@@ -420,7 +420,7 @@ h1 {
     background-color: rgb(255, 255, 255);
     border-radius: 15px;
     padding: 20px;
-    height: 375px;
+    height: auto;
 }
 
 .review-pic {
@@ -657,6 +657,7 @@ li a {
     border: 0px solid white;
     color: rgba(87, 170, 182, 1);
     font-size: 1.4rem;
+    display: none;
 }
 
     .review-card {
