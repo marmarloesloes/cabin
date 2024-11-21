@@ -226,7 +226,7 @@ body {
 
 .header-losse-pagina {
     width: 100dvw;
-    height: 400px;
+    height: 300px;
 }
 
 .omgeving {
@@ -236,7 +236,7 @@ body {
 .header-losse-pagina h1 {
     z-index: 999;
     color: white;
-    padding: 235px 0px 0px 100px;
+    padding: 185px 0px 0px 100px;
 }
 
 /* Verschillende Headers */
@@ -664,7 +664,7 @@ li a {
     }
 
     .header-losse-pagina h1 {
-        padding: 240px 0px 0px 50px;
+        padding: 195px 0px 0px 50px;
     }
 
     .accordion {
