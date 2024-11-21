@@ -136,6 +136,7 @@ body {
     min-height: 100dvh;
     display: flex;
     justify-content: flex-end;
+    position: relative; /* Ensure positioned children align correctly */
 }
 
 .header-part-left {
@@ -152,19 +153,38 @@ body {
 #video-container {
     height: 100%;
     width: 100%;
-    background-image: url("images/videocabin.mp4");
+    background-image: url("images/placeholder.jpg"); /* Safari fallback */
+    background-size: cover; /* Scale fallback appropriately */
+    background-position: center;
     background-color: transparent;
     position: absolute;
     z-index: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: none; /* Default to hiding this layer */
 }
 
+/* Main video for browsers that support object-fit */
 #background-video {
-    object-fit: cover; /* Ensures the video covers the entire container */
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    -webkit-object-fit: cover; /* Safari support */
     z-index: -1;
-    display: block;
+    display: block; /* Default to showing this layer */
     position: absolute;
+}
+
+/* Safari-specific fallback for mobile */
+@supports (-webkit-overflow-scrolling: touch) {
+    #background-video {
+        display: none; /* Hide primary video */
+    }
+
+    #video-container {
+        display: block; /* Show fallback */
+    }
 }
 
 .header-part-right {
@@ -206,7 +226,7 @@ body {
 
 .header-losse-pagina {
     width: 100dvw;
-    height: 500px;
+    height: 400px;
 }
 
 .omgeving {
@@ -216,14 +236,29 @@ body {
 .header-losse-pagina h1 {
     z-index: 999;
     color: white;
-    padding: 350px 0px 0px 100px;
+    padding: 235px 0px 0px 100px;
 }
 
-/* Header Contact */
+/* Verschillende Headers */
 
 .contact {
-    background-image: url("images/groenland7.jpg");
+    background-image: url("images/groenland.jpg");
+    background-color: orangered;
 }
+
+.privacy {
+    background-image: url("images/groenland.jpg");
+    background-color: orange;
+}
+
+.voorwaarden {
+    background-image: url("images/groenland.jpg");
+    background-color: yellowgreen;
+}
+
+.vragen {
+    background-image: url("images/groenland.jpg");
+    background-color: green;}
 
 /* segments */
 
@@ -473,6 +508,50 @@ li a {
     text-decoration: none;
 }
 
+/* veelgestelde vragen accordeon */
+
+.accordion {
+    width: 800px;
+    margin: 50px auto 50px;
+    border: 0px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #ddd;
+}
+
+.accordion-item:last-child {
+    border-bottom: none;
+}
+
+.accordion-header {
+    background: #f4f4f4;
+    border: none;
+    width: 100%;
+    text-align: left;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(79, 79, 79);
+    outline: none;
+}
+
+.accordion-header:hover {
+    background: #e0e0e0;
+}
+
+.accordion-content {
+    display: none;
+    padding: 10px 15px;
+    background: #fff;
+    font-size: 1.2rem;
+    line-height: 1.5;   
+}
+
+
 /*Responsiveness */
 
 @media (max-width: 1200px) {
@@ -520,6 +599,10 @@ li a {
 
     .review-card {
     height: 515px;
+    }
+
+    .accordion {
+        width: 600px;
     }
 
 }
@@ -576,9 +659,16 @@ li a {
     font-size: 1.4rem;
 }
 
-.review-card {
+    .review-card {
     height: 715px;
     }
 
+    .header-losse-pagina h1 {
+        padding: 240px 0px 0px 50px;
+    }
+
+    .accordion {
+        width: 350px;
+    }
 
   }

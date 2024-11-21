@@ -1,3 +1,4 @@
+
 // Get references to the menu button, dropdown menu, and close button
 const menuButton = document.getElementById('menu-button');
 const dropdownMenu = document.getElementById('dropdown-menu');
@@ -20,39 +21,17 @@ menuItems.forEach((item) => {
 function myFunction(x) {
     x.classList.toggle("change");
   }
+  
+// veelgestelde vragen accordeon //
 
+const headers = document.querySelectorAll('.accordion-header');
 
-  //carousel
-  const slides = document.querySelectorAll('.slide');
-let index = 0;
+headers.forEach(header => {
+    header.addEventListener('click', () => {
+        const content = header.nextElementSibling;
 
-function prevSlide(){
-    slides[index].classList.remove('active');
-    index--;
-
-    if(index < 0)
-        index = slides.length -1;
-
-    slides[index].classList.add('active');      
-}
-
-document.querySelector('.prev').addEventListener('click', e => {
-    prevSlide();
+        // Toggle the content's visibility
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    });
 });
-
-function nextSlide(){
-    slides[index].classList.remove('active');
-    index++;
-
-    if(index > slides.length -1)
-        index = 0;
-
-    slides[index].classList.add('active');      
-}
-
-document.querySelector('.next').addEventListener('click', e => {
-    nextSlide();
-});
-
-
 
