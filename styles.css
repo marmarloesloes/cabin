@@ -242,9 +242,19 @@ body {
 
 /* Verschillende Headers */
 
+.cabin {
+    background-image: url("images/groenland.jpg");
+    background-color: #D07F00;
+}
+
 .contact {
     background-image: url("images/groenland.jpg");
     background-color: orangered;
+}
+
+.erfgoed {
+    background-image: url("images/groenland.jpg");
+    background-color: #6B803F;
 }
 
 .privacy {
@@ -415,6 +425,10 @@ h1 {
     font-size: 1.4rem;
 }
 
+.prev:hover, .next:hover {
+    background-color: rgba(50, 150, 160, 1);
+}
+
 /* Review card */
 
 .review-card {
@@ -435,6 +449,8 @@ h1 {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 .review-name {
@@ -507,6 +523,11 @@ h1 {
 
 li a {
     text-decoration: none;
+    color: white;
+}
+
+li a:hover {
+    color: black;
 }
 
 /* veelgestelde vragen accordeon */

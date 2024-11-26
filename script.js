@@ -84,3 +84,15 @@ function handleSwipe() {
     }
 }
 
+// Change video source for mobile
+
+document.addEventListener("DOMContentLoaded", function () {
+    const video = document.getElementById("background-video");
+    const videoSource = document.getElementById("video-source");
+
+    if (window.innerWidth <= 768) {
+        videoSource.src = "images/videocabin.mp4";
+        video.load();
+    }
+});
+
