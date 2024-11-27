@@ -18,66 +18,28 @@
 </head>
 <body>
 
-    <!-- Bootstrap navbar -->
+    <!-- Navigation -->
 
-        <nav class="navbar fixed-top navbar-expand-lg custom-navbar">
+    <div id="navigation-placeholder"></div>
 
-            <div class="container-fluid ml-3 mr-3">
+    <!-- Header -->
+<div id="home" class="header-container">
 
-                <!-- logo -->
-                <a class="navbar-brand mb-0 h1" href="#">
-                    <img src="images/logo.jpg" width="100" height="100" alt="">
-                </a>
-
-                <!-- Drowpdown menu -->
-
-                <button id="menu-button" class="menu-button" onclick="myFunction(this)">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                </button>
-
-                <div id="dropdown-menu" class="dropdown-menu">
-                    <ul class="big-menu">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="cabin.html">De Cabin van Groenland</a></li>
-                        <li><a href="omgeving.html">De Omgeving</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="#reserveren">Reserveer nu</a></li>
-                    <hr>
-                    </ul>
-                    <ul class="mini-menu">
-                        <li><a href="#reviews">Reviews</a></li>
-                        <li><a href="https://www.instagram.com/decabinvangroenland/" target="_blank"><i class="bi bi-instagram"> Instagram</i></a></li>
-                        <li><a href="vragen.html">Veelgestelde vragen</a></li>
-                        <li><a href="privacy.html">Privacyverklaring</a></li>
-                        <li><a href="voorwaarden.html">Algemene voorwaarden</a></li>
-                    </ul>
-                <div>
-                </div>
-            </div>
-
-            </div>
-        </nav>
+    <div class="header-part-left">
+        <div id="video-container">
+        </div>
+        <video id="background-video" preload="auto" autoplay="autoplay" muted="muted" loop="loop">
+            <source id="video-source" src="images/cabinsplit.mp4" type="video/mp4">
+        </video>
+    </div>
     
-    <!-- header -->
-     <div id="home" class="header-container">
-
-        <div class="header-part-left">
-            <div id="video-container">
-            </div>
-            <video id="background-video" preload="auto" autoplay="autoplay" muted="muted" loop="loop">
-                <source id="video-source" src="images/cabinsplit.mp4" type="video/mp4">
-            </video>
+    <div class="header-part-right">
+        <div class="header-quote">
+            Kom even helemaal tot rust in de Cabin van Groenland.
         </div>
-
-        <div class="header-part-right">
-            <div class="header-quote">
-                Kom even helemaal tot rust in de Cabin van Groenland.
-            </div>
-            <a href="http://www.marloesdehaan.com"><button class="btn-reserveren">Reserveer nu</button></a>
-        </div>
-     </div>
+        <a href="http://www.marloesdehaan.com"><button class="btn-reserveren">Reserveer nu</button></a>
+    </div>
+    </div>
 
     <!-- De Cabin van Groenland -->
     
@@ -252,42 +214,11 @@
 
     <!-- Footer -->
 
-    <footer class="text-white py-5 footer-custom">
-        <div class="container">
-            <div class="row">
+    <div id="footer-placeholder"></div>
 
-                <div class="col-md-6">
-
-                    <ul class="list-unstyled">
-                        <li><a href="vragen.html">Veelgestelde vragen</a></li>
-                        <li><a href="privacy.html">Privacyverklaring</a></li>
-                        <li><a href="voorwaarden.html">Algemene Voorwaarden</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md">
-
-                    <ul class="list-unstyled">
-                        <li><a href="mailto:contact@decabinvangroenland.nl">contact@decabinvangroenland.nl</a></li>
-                        <li><a href="https://www.instagram.com/decabinvangroenland/" target="_blank"><i class="bi bi-instagram"> Instagram</i></a></li>
-                        <li></li>
-                    </ul>
-                </div>
-
-                <div class="col-md">
-
-                    <ul class="list-unstyled">
-                        <li>De Cabin van Groenland</li>
-                        <li>Korte Belkmerweg 40</li>
-                        <li>'t Zand</li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-    </footer>
-
+    <script src="navigation.js"></script>
     <script src="script.js"></script>
+    <script src="footer.js"></script>
 
 </body>
 </html>
