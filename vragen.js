@@ -1,12 +1,17 @@
-// veelgestelde vragen accordeon //
+var acc = document.getElementsByClassName("accordion-header");
+var i;
 
-const headers = document.querySelectorAll('.accordion-header');
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("actief");
 
-headers.forEach(header => {
-    header.addEventListener('click', () => {
-        const content = header.nextElementSibling;
+    var panel = this.nextElementSibling;
 
-        // Toggle the content's visibility
-        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    if (panel.classList.contains("open")) {
+        panel.classList.remove("open");
+      } else {
+        /* Otherwise, open the panel by adding the "open" class */
+        panel.classList.add("open");
+      }
     });
-});
+}

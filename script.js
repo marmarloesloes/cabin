@@ -1,9 +1,18 @@
-
-
-
-  //carousel
-  const slides = document.querySelectorAll('.slide');
+//carousel
+const slides = document.querySelectorAll('.slide');
+let dots = document.getElementsByClassName("dot");
 let index = 0;
+
+// Update the active dot
+function updateDots() {
+    // Remove the 'active-dot' class from all dots
+    for (let dot of dots) {
+        dot.classList.remove('active-dot');
+    }
+    // Add the 'active-dot' class to the current dot
+    dots[index].classList.add('active-dot');
+}
+
 
 function prevSlide(){
     slides[index].classList.remove('active');
@@ -12,7 +21,8 @@ function prevSlide(){
     if(index < 0)
         index = slides.length -1;
 
-    slides[index].classList.add('active');      
+    slides[index].classList.add('active');
+    updateDots();   
 }
 
 document.querySelector('.prev').addEventListener('click', e => {
@@ -26,12 +36,25 @@ function nextSlide(){
     if(index > slides.length -1)
         index = 0;
 
-    slides[index].classList.add('active');      
+    slides[index].classList.add('active');
+    updateDots();   
 }
 
 document.querySelector('.next').addEventListener('click', e => {
     nextSlide();
 });
+
+// functionality for the dots to switch slides
+for (let i = 0; i < dots.length; i++) {
+    dots[i].addEventListener('click', () => {
+        slides[index].classList.remove('active');
+        index = i;
+        slides[index].classList.add('active');
+        updateDots(); 
+    });
+}
+
+updateDots();
 
 // Swipe functionality with threshold
 const SWIPE_THRESHOLD = 30;  // Minimum swipe distance to trigger slide change
@@ -55,10 +78,8 @@ function handleSwipe() {
     const swipeDistance = touchstartX - touchendX; // Calculate swipe distance
 
     if (swipeDistance > SWIPE_THRESHOLD) {
-        // Swiped left (next slide)
         nextSlide();
     } else if (swipeDistance < -SWIPE_THRESHOLD) {
-        // Swiped right (previous slide)
         prevSlide();
     }
 }

@@ -6,6 +6,8 @@ Bruin: #7B4D00
 Groen: #6B803F
 Blauw: #57AAB6
 
+font used: Quicksand (google font)
+
 */
 
 * {
@@ -32,7 +34,6 @@ body {
 
 /* dropdown */
 
-/* Menu Button */
 .menu-button {
     height: 80px;
     width: 80px;
@@ -61,22 +62,18 @@ body {
     transition: 0.4s;
   }
 
-/* Rotate first bar */
 .change .bar1 {
     transform: translateY(17px) rotate(-45deg); 
 }
 
-/* Fade out the second bar */
 .change .bar2 {
     opacity: 0;
 }
 
-/* Rotate third bar */
 .change .bar3 {
     transform: translateY(-17px) rotate(45deg);
 }
 
-/* Dropdown Menu */
 .dropdown-menu {
     position: fixed;
     top: 0;
@@ -99,7 +96,6 @@ body {
     transform: translateX(0); /* Move into view */
 }
 
-/* Dropdown Menu Items */
 .dropdown-menu ul {
     list-style: none;
     padding: 0;
@@ -111,15 +107,15 @@ body {
     margin: 20px 0;
 }
 
+.dropdown-menu a:hover {
+    text-decoration: underline;
+}
+
 .big-menu a {
     color: #fff;
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: bold;
-}
-
-.dropdown-menu a:hover {
-    text-decoration: underline;
 }
 
 .mini-menu a {
@@ -129,7 +125,7 @@ body {
     font-weight: normal;
 }
 
-/* header */
+/* header with video on homepage */
 
 .header-container {
     width: 100vw;
@@ -137,7 +133,7 @@ body {
     min-height: 100dvh;
     display: flex;
     justify-content: flex-end;
-    position: relative; /* Ensure positioned children align correctly */
+    position: relative;
 }
 
 .header-part-left {
@@ -223,15 +219,11 @@ body {
     border: 3px solid #F4EEEC;
 }
 
-/* Header -losse-pagina */
+/* Header losse-pagina's */
 
 .header-losse-pagina {
     width: 100dvw;
     height: 300px;
-}
-
-.omgeving {
-    background-image: url("images/groenland9.jpg");
 }
 
 .header-losse-pagina h1 {
@@ -257,6 +249,10 @@ body {
     background-color: #6B803F;
 }
 
+.omgeving {
+    background-image: url("images/groenland9.jpg");
+}
+
 .privacy {
     background-image: url("images/groenland.jpg");
     background-color: #D07F00;
@@ -277,7 +273,7 @@ h1 {
     color: #7B4D00;
 }
 
-.segment-cabin, .segment-omgeving, .segment-over, .segment-reserveren, .segment-reviews, .segment-insta {
+.segment-cabin, .segment-omgeving, .segment-over, .segment-reserveren, .segment-reviews, .segment-insta, .segment-vragen {
     width: 100dvw;
     background-color: #F4EEEC;
     display: flex;
@@ -287,17 +283,10 @@ h1 {
     padding-top: 1rem;
 }
 
-
 .segment-text {
     width: 95%;
     padding:2rem;
     text-align: center;
-}
-
-/* Cabin segment */
-
-.segment-cabin h1 {
-    padding-top: 20px;
 }
 
 .wrapper {
@@ -310,24 +299,9 @@ h1 {
     padding-bottom: 50px;
 }
 
-.segment-cabin .segment-img img, .segment-over .segment-img img {
-    width: 450px;
-    height: 450px;
-    object-fit: cover;
-    border-radius: 10%;
-}
-
 .segment-cabin .segment-text, .segment-over .segment-text {
     width: 50%;
     text-align: left;
-}
-
-/* de omgeving segment */
-
- .segment-omgeving .segment-img img {
-    width: 100dvw;
-    height: 350px;
-    object-fit: cover;
 }
 
 .link {
@@ -340,9 +314,36 @@ h1 {
     font-weight: bold;
 }
 
-/* Over ons segment */
 
+/* Cabin segment */
 
+.segment-cabin h1 {
+    padding-top: 20px;
+}
+
+.segment-cabin .segment-img img {
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+/* de omgeving segment */
+
+ .segment-omgeving .segment-img img {
+    width: 100dvw;
+    height: 350px;
+    object-fit: cover;
+}
+
+/* Over ons / Contact segment */
+
+.segment-over .segment-img img {
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10%;
+}
 
 /* Reserveren segment */
 
@@ -428,6 +429,23 @@ h1 {
 .prev:hover, .next:hover {
     background-color: rgba(50, 150, 160, 1);
 }
+
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(155, 193, 199);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active-dot, .dot:hover {
+    background-color: rgba(50, 150, 160, 1);
+  }
 
 /* Review card */
 
@@ -559,20 +577,40 @@ li a:hover {
     font-weight: bold;
     color: rgb(79, 79, 79);
     outline: none;
+    transition: 0.4s;
 }
 
-.accordion-header:hover {
-    background: #e0e0e0;
+.actief, .accordion-header:hover {
+    background: #bde0e6;
 }
 
 .accordion-content {
-    display: none;
-    padding: 10px 15px;
+    display: block;
+    padding: 0px 15px;
     background: #fff;
     font-size: 1rem;
-    line-height: 1.5;   
+    line-height: 1.5;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.2s ease-out;
 }
 
+.accordion-content.open {
+    padding: 10px 15px;
+    height: 100px;
+}
+
+.accordion-header:after {
+    content: '\002B'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #57AAB6;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .actief:after {
+    content: "\2212"; /* Unicode character for "minus" sign (-) */
+  }
 
 /*Responsiveness */
 
