@@ -57,12 +57,12 @@ for (let i = 0; i < dots.length; i++) {
 updateDots();
 
 // Swipe functionality with threshold
-const SWIPE_THRESHOLD = 30;  // Minimum swipe distance to trigger slide change
+const SWIPE_THRESHOLD = 30; 
 
 let touchstartX = 0;
 let touchendX = 0;
 
-const slider = document.getElementById('slider'); // The slider container
+const slider = document.getElementById('slider');
 
 slider.addEventListener('touchstart', (e) => {
     touchstartX = e.changedTouches[0].screenX;
@@ -75,7 +75,7 @@ slider.addEventListener('touchend', (e) => {
 
 // Handle swipe with threshold distance
 function handleSwipe() {
-    const swipeDistance = touchstartX - touchendX; // Calculate swipe distance
+    const swipeDistance = touchstartX - touchendX;
 
     if (swipeDistance > SWIPE_THRESHOLD) {
         nextSlide();
