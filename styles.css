@@ -567,7 +567,7 @@ h2 {
     color: #7B4D00;
     font-size: 1.5rem;
     padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 
 #cabin-1 .wrapper, #cabin-2 .wapper {
@@ -587,6 +587,10 @@ h2 {
     text-align: left;
 }
 
+#contact ul {
+    padding-left: 0;
+}
+
 #cabin-img img {
 width: 100dvw;
 height: 250px;
@@ -599,9 +603,9 @@ object-fit: cover;
 }
 
 .block-img-big img {
-    width: 100%;
+    width: 90%;
     height: auto;
-    max-width: 800px;
+    max-width: 1500px;
     border-radius: 15px;
     margin-bottom: 30px;
 }
@@ -787,16 +791,22 @@ object-fit: cover;
         transform: translateY(-8px) rotate(45deg);
     }
 
-}
-
-  @media (max-width: 500px) {
-
-    * {
-        scroll-margin-top: 120px;
+    .header-losse-pagina {
+        height: 250px;
     }
 
-    .navbar-brand img {
-        height: 75px;
+    .header-losse-pagina h1 {
+        padding: 165px 0px 0px 50px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .block-right .block-img img, .block-left .block-img img {
+        width: 400px;
+        height: 300px;
+        border-radius: 20px;
     }
 
     .wrapper {
@@ -812,7 +822,31 @@ object-fit: cover;
 
     .block-right .block-text, .block-left .block-text {
         width: 80%;
-        text-align: center;
+    }
+}
+
+  @media (max-width: 500px) {
+
+    * {
+        scroll-margin-top: 120px;
+    }
+
+    .navbar-brand img {
+        height: 75px;
+    }
+
+    .block-right .block-img img, .block-left .block-img img {
+        width: 300px;
+        height: 300px;
+        border-radius: 20px;
+    }
+
+    .block-right .block-text, .block-left .block-text {
+        width: 80%;
+    }
+
+    #cabin-1 .block-text, #cabin-2 .block-text {
+        text-align: left;
     }
 
     .block-reserveren {
@@ -854,16 +888,20 @@ object-fit: cover;
     height: 715px;
     }
 
+    .accordion {
+        width: 300px;
+    }
+
     .header-losse-pagina {
         height: 200px;
     }
 
     .header-losse-pagina h1 {
-        padding: 135px 0px 0px 50px;
+        font-size: 1.3rem;
     }
 
-    .accordion {
-        width: 300px;
+    .header-losse-pagina h1 {
+        padding: 135px 0px 0px 50px;
     }
 
 }
