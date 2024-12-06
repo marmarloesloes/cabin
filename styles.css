@@ -566,6 +566,8 @@ li a:hover {
 h2 {
     color: #7B4D00;
     font-size: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 #cabin-1 .wrapper, #cabin-2 .wapper {
@@ -577,9 +579,8 @@ h2 {
     padding-top: 0px;
 }
 
-#cabin-3 .block-text {
-    padding-left: 9rem;
-    padding-right: 9rem;
+#cabin-1 h2, #cabin-2 h2, #cabin-3 h2 {
+    padding-top: 0;
 }
 
 #cabin-3 p, #cabin-3 h2, #cabin-3 .link{
@@ -592,17 +593,50 @@ height: 250px;
 object-fit: cover;
 }
 
-.cabin-images {
+.block-img-big {
     display: flex;
     justify-content: center;
 }
 
-#cabin img {
+.block-img-big img {
     width: 100%;
     height: auto;
     max-width: 800px;
     border-radius: 15px;
     margin-bottom: 30px;
+}
+
+#erfgoed h2, #contact h2 {
+    padding: 2rem;
+}
+
+#contact ul {
+    list-style: none;
+}
+
+#contact a, #omgeving a, #privacy a {
+    color: #7B4D00;
+}
+
+#contact a:hover, #omgeving a:hover, #privacy a:hover {
+    color: #D07F00;
+}
+
+#privacy .block-text, #omgeving .block-text {
+    text-align: left;
+}
+
+.reserveren-los {
+    background-color: #F4EEEC;
+}
+
+.reserveren-los .block-text {
+    color: black;
+}
+
+.reserveren-los .btn-reserveren {
+    border: 3px solid #57AAB6;
+    color: black;
 }
 
 /* veelgestelde vragen accordeon */
@@ -812,4 +846,4 @@ object-fit: cover;
         width: 300px;
     }
 
-  }
+}
