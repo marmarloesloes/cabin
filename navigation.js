@@ -33,31 +33,13 @@ document.addEventListener("DOMContentLoaded", function () {
                     link.setAttribute("href", `index.html${hash}`); // Prepend "index.html" to the hash
                 }
             });
-
-            // Now that navigation has been loaded, change the logo for mobile
-            const logoImg = document.querySelector('.navbar-brand img'); // Select the img inside navbar-brand
-
-            if (!logoImg) {
-                console.error('Logo image not found');
-                return;
-            }
-
-            // Function to update the image source based on the viewport width
-            function updateImageSource() {
-                if (window.innerWidth <= 700) {
-                    logoImg.src = 'images/logo_cabin.png';  // New image for mobile
-                } else {
-                    logoImg.src = 'images/logo_horizontaal.png';  // Original image for larger screens
-                }
-            }
-
-            // Run the function initially to set the correct image on load
-            updateImageSource();
-
-            // Listen for resize events to update the image source when the viewport changes
-            window.addEventListener('resize', updateImageSource);
-
         })
         .catch(error => console.error("Error loading navigation:", error));
 });
+
+// Menu animation function
+function myFunction(x) {
+    x.classList.toggle("change");
+}
+
 
