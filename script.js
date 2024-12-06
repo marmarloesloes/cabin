@@ -88,18 +88,24 @@ function handleSwipe() {
 
 document.addEventListener("DOMContentLoaded", function () {
     const video = document.getElementById("background-video");
-    const videoSource = document.getElementById("video-source");
-    const fallbackImage = document.getElementById("fallback-image");
+    const fallback = document.getElementById("video-container");
 
-    if (window.innerWidth <= 768) {
-        videoSource.src = "images/videocabin.mp4";
-        video.load();
+    // Check if video can autoplay
+    video.play().then(() => {
+        console.log("Video autoplayed successfully.");
+        video.style.display = "block";
+        fallback.style.display = "none";
+    }).catch((error) => {
+        console.warn("Video failed to autoplay. Showing fallback.", error);
+        video.style.display = "none";
+        fallback.style.display = "block";
+    });
 
-        video.onerror = function () {
-            // Show fallback image if video fails to load
-            fallbackImage.style.display = "block";
-            video.style.display = "none";
-        };
+    // Safari-specific logic (if needed)
+    if (/iPhone|iPad|iPod|Macintosh/.test(navigator.userAgent)) {
+        console.log("Safari detected. Using fallback.");
+        video.style.display = "none";
+        fallback.style.display = "block";
     }
 });
 
