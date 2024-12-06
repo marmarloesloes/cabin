@@ -897,3 +897,17 @@ object-fit: cover;
         transform: translateY(-7px) rotate(45deg);
     }
 }
+
+@media (max-height: 600px) {
+
+    .dropdown-menu a {
+        font-size: 1.2rem;
+    }
+
+    .dropdown-menu hr {
+        display: none;
+    }
+    .mini-menu {
+        display: none;
+    }
+}
