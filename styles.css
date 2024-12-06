@@ -775,7 +775,7 @@ object-fit: cover;
         margin: 3px 0;
       }
 
-      .change .bar1 {
+    .change .bar1 {
         transform: translateY(9px) rotate(-45deg); 
     }
     
@@ -855,11 +855,11 @@ object-fit: cover;
     }
 
     .header-losse-pagina {
-        height: 300px;
+        height: 200px;
     }
 
     .header-losse-pagina h1 {
-        padding: 195px 0px 0px 50px;
+        padding: 135px 0px 0px 50px;
     }
 
     .accordion {
@@ -885,7 +885,7 @@ object-fit: cover;
         margin: 2px 0;
       }
 
-      .change .bar1 {
+    .change .bar1 {
         transform: translateY(6px) rotate(-45deg); 
     }
     
