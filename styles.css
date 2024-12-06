@@ -238,7 +238,7 @@ body {
 .cabin {
     background-image: url("images/cabinheader.jpg");
     background-color: #D07F00;
-    background-position-y: center;
+    background-position: center;
     background-size: cover;
 }
 
@@ -839,7 +839,7 @@ object-fit: cover;
     }
 
     .header-losse-pagina h1 {
-        padding: 195px 0px 0px 50px;
+        padding: 245px 0px 0px 50px;
     }
 
     .accordion {
