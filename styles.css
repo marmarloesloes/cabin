@@ -230,50 +230,63 @@ body {
     z-index: 999;
     color: white;
     padding: 185px 0px 0px 100px;
+    text-shadow: #000000 1px 0 10px;
 }
 
 /* Verschillende Headers */
 
 .cabin {
-    background-image: url("images/groenland.jpg");
+    background-image: url("images/cabinheader.jpg");
     background-color: #D07F00;
+    background-position-y: center;
+    background-size: cover;
 }
 
 .contact {
-    background-image: url("images/groenland.jpg");
+    background-image: url("images/contactheader.jpg");
     background-color: orangered;
+    background-size: cover;
 }
 
 .erfgoed {
-    background-image: url("images/groenland.jpg");
+    background-image: url("images/erfgoedheader.jpg");
     background-color: #6B803F;
+    background-size: cover;
 }
 
 .omgeving {
-    background-image: url("images/groenland9.jpg");
+    background-image: url("images/omgevingheader.jpg");
+    background-color: #6B803F;
+    background-position-y: center;
+    background-size: cover;
 }
 
 .privacy {
-    background-image: url("images/groenland.jpg");
+    background-image: url("images/privacyheader.jpg");
     background-color: #D07F00;
+    background-size: cover;
 }
 
 .voorwaarden {
-    background-image: url("images/groenland.jpg");
+    background-image: url("images/voorwaardenheader.jpg");
     background-color: #6B803F;
+    background-position-y: center;
+    background-size: cover;
 }
 
 .vragen {
-    background-image: url("images/groenland.jpg");
-    background-color: green;}
+    background-image: url("images/vragenheader.jpg");
+    background-color: green;
+    background-size: cover;
+}
 
-/* segments */
+/* Blocks */
 
 h1 {
     color: #7B4D00;
 }
 
-.segment-cabin, .segment-omgeving, .segment-over, .segment-reserveren, .segment-reviews, .segment-insta, .segment-vragen {
+.block-right, .block-center, .block-left, .block-reserveren, .block-reviews, .block-insta, .block-vragen {
     width: 100dvw;
     background-color: #F4EEEC;
     display: flex;
@@ -283,7 +296,7 @@ h1 {
     padding-top: 1rem;
 }
 
-.segment-text {
+.block-text {
     width: 95%;
     padding:2rem;
     text-align: center;
@@ -296,10 +309,10 @@ h1 {
     justify-content: center;
     gap: 15px;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 
-.segment-cabin .segment-text, .segment-over .segment-text {
+.block-right .block-text, .block-left .block-text {
     width: 50%;
     text-align: left;
 }
@@ -315,52 +328,52 @@ h1 {
 }
 
 
-/* Cabin segment */
+/* Cabin */
 
-.segment-cabin h1 {
+#cabin h1, #over h1 {
     padding-top: 20px;
 }
 
-.segment-cabin .segment-img img {
+.block-right .block-img img {
     width: 450px;
     height: 450px;
     object-fit: cover;
     border-radius: 10%;
 }
 
-/* de omgeving segment */
+/* de omgeving */
 
- .segment-omgeving .segment-img img {
+ .block-center .block-img img {
     width: 100dvw;
     height: 350px;
     object-fit: cover;
 }
 
-/* Over ons / Contact segment */
+/* Over ons / Contact */
 
-.segment-over .segment-img img {
+.block-left .block-img img {
     width: 450px;
     height: 450px;
     object-fit: cover;
     border-radius: 10%;
 }
 
-/* Reserveren segment */
+/* Reserveren */
 
-.segment-reserveren {
+.block-reserveren {
     background-color: #6B803F;
 }
 
-.segment-reserveren h1 {
+.block-reserveren h1 {
     color: #F4EEEC;
     margin-top: 30px;
 }
 
-.segment-reserveren .segment-text {
+.block-reserveren .block-text {
     color: #F4EEEC;
 }
 
-.segment-reserveren .btn-reserveren {
+.block-reserveren .btn-reserveren {
     padding: 10px;
     background-color: rgba(255, 255, 255, 0);
     border: 3px solid #F4EEEC;
@@ -370,12 +383,12 @@ h1 {
     margin-bottom: 60px;
 }
 
-.segment-reserveren .btn-reserveren:hover {
+.block-reserveren .btn-reserveren:hover {
     background-color: rgba(170, 222, 230, 1);
     color: black;
 }
 
-/* Review segment */
+/* Review */
 
 .wrapper-reviews {
     width: 800px;
@@ -491,18 +504,18 @@ h1 {
     color: #7B4D00;
 }
 
-/* Instagram segment */
+/* Instagram */
 
-.segment-insta {
+.block-insta {
     padding-top: 0px;
 }
 
-.segment-insta img {
+.block-insta img {
     width: 400px;
     border-radius: 15px;
 }
 
-.segment-insta-text {
+.block-insta-text {
     width: 40%;
     padding: 2rem;
     font-family: "Quicksand", sans-serif;
@@ -510,7 +523,7 @@ h1 {
     align-self: flex-start;
 }
 
-.segment-insta-text button {
+.block-insta-text button {
     font-size: 1rem;
     padding: 0.8rem;
     border-radius: 5px;
@@ -519,7 +532,7 @@ h1 {
     color: #F4EEEC;
 }
 
-.segment-insta-text button:hover {
+.block-insta-text button:hover {
     background-color: rgba(170, 222, 230, 1);
     color: black;
     border: none;
@@ -546,6 +559,50 @@ li a {
 
 li a:hover {
     color: black;
+}
+
+/* losse pagina's */
+
+h2 {
+    color: #7B4D00;
+    font-size: 1.5rem;
+}
+
+#cabin-1 .wrapper, #cabin-2 .wapper {
+    padding-bottom: 0px;
+}
+
+#cabin-2 .block-text {
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+#cabin-3 .block-text {
+    padding-left: 9rem;
+    padding-right: 9rem;
+}
+
+#cabin-3 p, #cabin-3 h2, #cabin-3 .link{
+    text-align: left;
+}
+
+#cabin-img img {
+width: 100dvw;
+height: 250px;
+object-fit: cover;
+}
+
+.cabin-images {
+    display: flex;
+    justify-content: center;
+}
+
+#cabin img {
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+    border-radius: 15px;
+    margin-bottom: 30px;
 }
 
 /* veelgestelde vragen accordeon */
@@ -616,20 +673,20 @@ li a:hover {
 
 @media (max-width: 1200px) {
 
-    .segment-text {
+    .block-text {
         padding-top: 0.5rem;
     }
 
-    .segment-insta-text {
+    .block-insta-text {
         padding-top: 1rem;
     }
 
-    .segment-cabin .segment-img img, .segment-over .segment-img img {
+    .block-right .block-img img, .block-left .block-img img {
         width: 300px;
         height: 300px;
     }
 
-    .segment-insta img {
+    .block-insta img {
         width: 300px;
     }
 }
@@ -640,7 +697,7 @@ li a:hover {
         font-size: 1rem;
     }   
     
-    .btn-reserveren, .segment-reserveren .btn-reserveren {
+    .btn-reserveren, .block-reserveren .btn-reserveren {
         font-size: 1rem;
     }
 
@@ -669,6 +726,29 @@ li a:hover {
 
   @media (max-width: 500px) {
 
+    .menu-button {
+        height: 50px;
+        width: 50px;
+    }
+
+    .bar1, .bar2, .bar3 {
+        width: 20px;
+        height: 2.5px;
+        margin: 3px 0;
+      }
+
+      .change .bar1 {
+        transform: translateY(9px) rotate(-45deg); 
+    }
+    
+    .change .bar2 {
+        opacity: 0;
+    }
+    
+    .change .bar3 {
+        transform: translateY(-8px) rotate(45deg);
+    }
+
     .wrapper {
         width: 100%;
         display: flex;
@@ -680,16 +760,16 @@ li a:hover {
         padding-bottom: 10px;
     }
 
-    .segment-cabin .segment-text, .segment-over .segment-text {
+    .block-right .block-text, .block-left .block-text {
         width: 80%;
         text-align: center;
     }
 
-    .segment-reserveren {
+    .block-reserveren {
         margin-top: 30px;
     }
 
-    .segment-insta-text {
+    .block-insta-text {
         width: 70%;
         padding: 1rem;
         font-family: "Quicksand", sans-serif;
