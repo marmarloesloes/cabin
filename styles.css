@@ -688,7 +688,7 @@ object-fit: cover;
 
 .accordion-content.open {
     padding: 10px 15px;
-    height: 100px;
+    height: 200px;
 }
 
 .accordion-header:after {
