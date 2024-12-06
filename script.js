@@ -89,10 +89,18 @@ function handleSwipe() {
 document.addEventListener("DOMContentLoaded", function () {
     const video = document.getElementById("background-video");
     const videoSource = document.getElementById("video-source");
+    const fallbackImage = document.getElementById("fallback-image");
 
     if (window.innerWidth <= 768) {
         videoSource.src = "images/videocabin.mp4";
         video.load();
+
+        video.onerror = function () {
+            // Show fallback image if video fails to load
+            fallbackImage.style.display = "block";
+            video.style.display = "none";
+        };
     }
 });
+
 
