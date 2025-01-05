@@ -278,7 +278,7 @@ body {
 }
 
 .privacy {
-    background-image: url("images/privacyheader.jpg");
+    background-image: url("images/privacyheaer.jpg");
     background-color: #D07F00;
     background-size: cover;
 }
@@ -894,11 +894,11 @@ and (orientation: landscape) {
     }
 
     .header-losse-pagina {
-        height: 250px;
+        height: 175px;
     }
 
     .header-losse-pagina h1 {
-        padding: 165px 0px 0px 50px;
+        padding: 125px 0px 0px 50px;
     }
 
 }
