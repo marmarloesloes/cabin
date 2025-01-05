@@ -278,7 +278,7 @@ body {
 }
 
 .privacy {
-    background-image: url("images/privacyheaer.jpg");
+    background-image: url("images/privacyheader.jpg");
     background-color: #D07F00;
     background-size: cover;
 }
@@ -309,12 +309,12 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 1rem;
 }
 
 .block-text {
     width: 95%;
     padding:2rem;
+    padding-top 0px;
     text-align: center;
 }
 
@@ -324,8 +324,6 @@ h1 {
     flex-direction: row;
     justify-content: center;
     gap: 15px;
-    padding-top: 50px;
-    padding-bottom: 30px;
 }
 
 .block-right .block-text, .block-left .block-text {
@@ -333,21 +331,32 @@ h1 {
     text-align: left;
 }
 
-.link {
-    padding-top: 10px;
-    font-size: 1.2rem;
-}
 
-.link a:link, .link a:visited, .link a:active {
+
+.btn-link {
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1rem;
+    border: 3px solid #F4EEEC;
+    background-color: #c4d1a7;
     color: #6B803F;
     font-weight: bold;
+    text-decoration: none;
+    margin-top: 25px;
 }
+
+.btn-link:hover {
+    background-color: #e3ead5;
+    color: #6B803F;
+}
+
 
 
 /* Cabin */
 
-#cabin h1, #over h1 {
-    padding-top: 20px;
+#cabin h1, #omgeving h1, #over h1 {
+    margin-top: 70px;
+    margin-bottom: 70px; 
 }
 
 .block-right .block-img img {
@@ -365,6 +374,10 @@ h1 {
     object-fit: cover;
 }
 
+#omgeving .block-img{
+    margin-top: 70px;
+}
+
 /* Over ons / Contact */
 
 .block-left .block-img img {
@@ -376,32 +389,25 @@ h1 {
 
 /* Reserveren */
 
-.block-reserveren {
-    background-color: #6B803F;
+#reserveren .block-text {
+    padding-top: 50px;
+
 }
 
-.block-reserveren h1 {
-    color: #F4EEEC;
-    margin-top: 30px;
+.block-reserveren {
+    background-color: #6B803F;
+    margin-top: 70px;
+    margin-bottom: 70px;
 }
 
 .block-reserveren .block-text {
     color: #F4EEEC;
 }
 
-.block-reserveren .btn-reserveren {
+.block-reserveren .btn-link {
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0);
-    border: 3px solid #F4EEEC;
-    border-radius: 10px;
-    color: #F4EEEC;
-    font-size: 1.5rem;
+    border: 0px solid #F4EEEC;
     margin-bottom: 60px;
-}
-
-.block-reserveren .btn-reserveren:hover {
-    background-color: rgba(170, 222, 230, 1);
-    color: rgb(45, 100, 101);
 }
 
 /* Review */
@@ -524,6 +530,8 @@ h1 {
 
 .block-insta {
     padding-top: 0px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .block-insta img {
@@ -593,17 +601,15 @@ h3 {
     display:inline;
 }
 
-#cabin-1 .wrapper, #verwarming .wapper, #omgeving .wrapper {
-    padding-bottom: 0px;
+/* losse pagina: cabin */
+
+
+#cabin-1 {
+    margin-top: 100px;
 }
 
-#verwarming .block-text, #erf .block-text, #omgeving .block-text, #voorzieningen .block-text {
-    padding-bottom: 0px;
-    padding-top: 0px;
-}
-#voorzieningen .block-text {
-    padding-left: 0px;
-    padding-right: 0px;
+#verwarming, #koken, #duurzaam {
+    margin-top: 70px;
 }
 
 #cabin-1 h2, #verwarming h2, #duurzaam h2, #omgeving h2, #voorzieningen h2 {
@@ -616,11 +622,17 @@ h3 {
 
 #duurzaam .block-text, #erf .block-text, #voorzieningen .block-text {
     width: 80dvw;
+    padding-top: 0px;
+}
+
+#cabin-1 .block-text, #verwarming .block-text {
+    padding-top: 0px;
 }
 
 .voorzieningen {
     background-color: #6B803F;
-    margin-top: 40px;
+    margin-top: 70px;
+    margin-bottom: 100px;
     padding-top: 60px;
     padding-bottom: 30px;
 }
@@ -628,10 +640,6 @@ h3 {
 .voorzieningen h2 {
     padding-bottom: 0px;
     color: #F4EEEC;
-}
-
-#contact ul {
-    padding-left: 0;
 }
 
 .accordion-content ul {
@@ -653,29 +661,86 @@ object-fit: cover;
 .block-img-big img {
     width: 75%;
     height: auto;
-    max-width: 1500px;
+    max-width: 800px;
     border-radius: 15px;
-    margin-bottom: 30px;
+    margin-bottom: 70px;
 }
 
-#erfgoed h2, #contact h2 {
-    padding: 2rem;
+/* losse pagina: erfgoed */
+
+#erfgoed {
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+
+/* losse pagina: contact */
+
+#contact {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
 }
 
 #contact ul {
     list-style: none;
+    padding-left: 0;
 }
 
-#contact a, #omgeving a, #voorwaarden a {
+#contact a{
     color: #7B4D00;
 }
 
-#contact a:hover, #omgeving a:hover, #voorwaarden a:hover {
+#contact a:hover{
     color: #D07F00;
 }
 
-#privacy .block-text, #omgeving .block-text, #voorwaarden .block-text {
+/* losse pagina: de omgeving */
+
+#omgeving-1 {
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+
+#omgeving-1 h2 {
+    padding-top: 0px;
+}
+
+#omgeving-2 {
+    margin-bottom: 70px;
+}
+
+#omgeving-2 a {
+    color: #7B4D00;
+}
+
+ #omgeving-2 a:hover {
+    color: #D07F00;
+}
+
+/* losse pagina: privacy */
+
+#privacy {
+    margin-top: 40px;
+    margin-bottom: 70px;
+}
+
+#privacy a {
+    color: #7B4D00;
+}
+
+#privacy a:hover {
+    color: #D07F00;
+}
+
+#privacy .block-text {
     text-align: left;
+}
+
+/* losse pagina: algemene voorwaarden */
+
+#voorwaarden {
+    margin-top: 40px;
+    margin-bottom: 70px;
 }
 
 #voorwaarden li {
@@ -684,6 +749,19 @@ object-fit: cover;
 
 #voorwaarden li span{
     color: black;
+}
+
+#voorwaarden .block-text {
+    text-align: left;
+}
+
+/* element op losse pagina's: reserveren */
+
+#reserveren {
+    padding: 0px;
+    margin: 0px;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 .reserveren-los {
@@ -697,9 +775,15 @@ object-fit: cover;
 .reserveren-los .btn-reserveren {
     border: 3px solid #57AAB6;
     color: #26707b;
+    margin: 0px;
 }
 
 /* veelgestelde vragen accordeon */
+
+#vragen {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
 
 .accordion {
     width: 800px;
