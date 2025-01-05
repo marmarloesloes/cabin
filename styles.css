@@ -28,7 +28,6 @@ body {
 .custom-navbar {
     padding-left: 30px;
     padding-right: 30px;
-    background-color: white;
     width: 100dvw;
 }
 
@@ -199,37 +198,54 @@ body {
 .header-quote {
     font-family: "Quicksand", sans-serif;
     font-size: 2rem;
-    color: black;
+    color: #7B4D00;
     text-align: center;
     padding-bottom: 20px;
+}
+
+.header-list {
+    font-size: 1.2rem;
+    text-align: left;
+    padding-left: 15%;
+    padding-bottom: 8%;
+    padding-top: 8%;
+    color: black;
+}
+
+.header-list li {
+    color: #7B4D00;
+}
+
+.header-list li span {
+    color: black;
 }
 
 .btn-reserveren {
     padding: 10px;
     background-color: rgba(255, 255, 255, 0);
-    border: 3px solid black;
     border-radius: 10px;
-    color: black;
     font-size: 1.5rem;
+    border: 3px solid #57AAB6;
+    color: #234b51;
 }
 
 .btn-reserveren:hover {
     background-color: rgba(170, 222, 230, 1);
-    color: black;
-    border: 3px solid #F4EEEC;
+    color: rgb(45, 100, 101);
 }
+
 
 /* Header losse-pagina's */
 
 .header-losse-pagina {
     width: 100dvw;
-    height: 350px;
+    height: 300px;
 }
 
 .header-losse-pagina h1 {
     z-index: 999;
     color: white;
-    padding: 240px 0px 0px 100px;
+    padding: 190px 0px 0px 100px;
     text-shadow: #000000 1px 0 10px;
 }
 
@@ -385,7 +401,7 @@ h1 {
 
 .block-reserveren .btn-reserveren:hover {
     background-color: rgba(170, 222, 230, 1);
-    color: black;
+    color: rgb(45, 100, 101);
 }
 
 /* Review */
@@ -570,25 +586,40 @@ h2 {
     padding-bottom: 1rem;
 }
 
-#cabin-1 .wrapper, #cabin-2 .wapper {
+h3 {
+    color: #7B4D00;
+    font-size: 1rem;
+    font-weight: bold;
+    display:inline;
+}
+
+#cabin-1 .wrapper, #verwarming .wapper, #omgeving .wrapper {
     padding-bottom: 0px;
 }
 
-#cabin-2 .block-text {
+#verwarming .block-text, #erf .block-text, #omgeving .block-text {
     padding-bottom: 0px;
     padding-top: 0px;
 }
 
-#cabin-1 h2, #cabin-2 h2, #cabin-3 h2 {
+#cabin-1 h2, #verwarming h2, #duurzaam h2, #omgeving h2 {
     padding-top: 0;
 }
 
-#cabin-3 p, #cabin-3 h2, #cabin-3 .link{
+#duurzaam p, #duurzaam h2, #erf h2, #erf p, #duurzaam .link{
     text-align: left;
+}
+
+#duurzaam .block-text, #erf .block-text {
+    width: 80dvw;
 }
 
 #contact ul {
     padding-left: 0;
+}
+
+.accordion-content ul {
+    text-align: left;
 }
 
 #cabin-img img {
@@ -626,8 +657,16 @@ object-fit: cover;
     color: #D07F00;
 }
 
-#privacy .block-text, #omgeving .block-text {
+#privacy .block-text, #omgeving .block-text, #voorwaarden .block-text {
     text-align: left;
+}
+
+#voorwaarden li {
+    color: #7B4D00;
+}
+
+#voorwaarden li span{
+    color: black;
 }
 
 .reserveren-los {
@@ -640,8 +679,50 @@ object-fit: cover;
 
 .reserveren-los .btn-reserveren {
     border: 3px solid #57AAB6;
-    color: black;
+    color: #26707b;
 }
+
+/* kamer carousels */
+
+.carousel {
+    position: relative;
+    width: 800px;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image {
+    width: 300px;
+    height: 300px;;
+    flex-shrink: 0;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
 
 /* veelgestelde vragen accordeon */
 
@@ -692,7 +773,7 @@ object-fit: cover;
 
 .accordion-content.open {
     padding: 10px 15px;
-    height: 200px;
+    height: auto;
 }
 
 .accordion-header:after {
@@ -733,7 +814,11 @@ object-fit: cover;
 
     .header-quote {
         font-size: 1rem;
-    }   
+    }
+    
+    .header-list {
+        font-size: 0.7rem;
+    }
     
     .btn-reserveren, .block-reserveren .btn-reserveren {
         font-size: 1rem;
