@@ -673,6 +673,10 @@ object-fit: cover;
     margin-bottom: 40px;
 }
 
+#erfgoed .block-text {
+    width: 75dvw;
+}
+
 /* losse pagina: contact */
 
 #contact {
@@ -734,6 +738,7 @@ object-fit: cover;
 
 #privacy .block-text {
     text-align: left;
+    width: 75dvw;
 }
 
 /* losse pagina: algemene voorwaarden */
@@ -753,6 +758,7 @@ object-fit: cover;
 
 #voorwaarden .block-text {
     text-align: left;
+    width: 75dvw;
 }
 
 /* element op losse pagina's: reserveren */
@@ -994,6 +1000,45 @@ and (orientation: landscape) {
         height: 300px;
         border-radius: 20px;
     }
+
+    #cabin h1 {
+            margin-top: 70px;
+            margin-bottom: 40px; 
+        }
+
+    #cabin .block-text, #over .block-text, #cabin-1 h2, #cabin-1 p, #verwarming h2, #verwarming p, #koken h2, #koken p, #duurzaam h2, #duurzaam p, #erf h2, #erf p {
+            text-align: center;
+        }
+    
+    #omgeving h1 {
+        margin-top: 60px;
+        margin-bottom: 60px; 
+    }
+
+    #over h1 {
+        margin-top: 70px;
+        margin-bottom: 40px; 
+    }
+
+    #block-insta {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    #cabin-1, #erfgoed, #omgeving-1 {
+        margin-top: 60px;
+        margin-bottom: 0px;
+    }
+
+    #vragen {
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+
+    #verwarming, #omgeving-2 {
+        margin-top: 0px;
+    }
+
 
     .wrapper {
         width: 100%;
