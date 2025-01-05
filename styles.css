@@ -1039,6 +1039,11 @@ and (orientation: landscape) {
         margin-top: 0px;
     }
 
+    #reserveren {
+            margin-top: 40px;
+            margin-bottom: 80px;
+        }  
+
 
     .wrapper {
         width: 100%;
