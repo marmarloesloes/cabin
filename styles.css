@@ -666,11 +666,11 @@ object-fit: cover;
     list-style: none;
 }
 
-#contact a, #omgeving a, #privacy a {
+#contact a, #omgeving a, #voorwaarden a {
     color: #7B4D00;
 }
 
-#contact a:hover, #omgeving a:hover, #privacy a:hover {
+#contact a:hover, #omgeving a:hover, #voorwaarden a:hover {
     color: #D07F00;
 }
 
