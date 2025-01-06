@@ -200,6 +200,7 @@ body {
     font-size: 2rem;
     color: #7B4D00;
     text-align: center;
+    margin-top: 150px;
     padding-bottom: 20px;
 }
 
@@ -376,6 +377,10 @@ h1 {
 
 #omgeving .block-img{
     margin-top: 70px;
+}
+
+#omgeving .block-text {
+    width: 75dvw;
 }
 
 /* Over ons / Contact */
@@ -827,19 +832,20 @@ object-fit: cover;
 
 .accordion-content {
     display: block;
-    padding: 0px 15px;
+    padding: 0 15px;
     background: #fff;
     font-size: 1rem;
     line-height: 1.5;
-    height: 0;
-    overflow: hidden;
-    transition: height 0.2s ease-out;
+    max-height: 0; 
+    overflow: hidden; 
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
 }
 
 .accordion-content.open {
-    padding: 10px 15px;
-    height: auto;
+    padding: 10px 15px; 
+    max-height: 1000px; 
 }
+
 
 .accordion-header:after {
     content: '\002B'; /* Unicode character for "plus" sign (+) */
@@ -879,6 +885,7 @@ object-fit: cover;
 
     .header-quote {
         font-size: 1rem;
+        margin-top: 0px;
     }
     
     .header-list {
@@ -1063,6 +1070,10 @@ and (orientation: landscape) {
     .accordion {
         width: 450px;
     }
+
+    #voorzieningen .accordion-header {
+        font-size: 1rem;
+    }
 }
 
   @media (max-width: 500px) {
@@ -1087,6 +1098,10 @@ and (orientation: landscape) {
 
     #cabin-1 .block-text, #cabin-2 .block-text {
         text-align: left;
+    }
+
+    .btn-reserveren {
+        font-size: 0.7rem;
     }
 
     .block-reserveren {
