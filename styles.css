@@ -1154,11 +1154,6 @@ and (orientation: landscape) {
         height: 800px;
     }
 
-    #fotocarousel {
-        width: 350px;
-        height: 250px;
-    }
-
     #slider {
         width: 250px;
     }
@@ -1166,6 +1161,7 @@ and (orientation: landscape) {
     .slide {
         width: 250px;
     }
+
 
     .prev, .next {
     width: 20px;
