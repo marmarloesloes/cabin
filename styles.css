@@ -678,7 +678,7 @@ object-fit: cover;
     display: none;
 }
 
-#cabinhr #erfgoedhr {
+#cabinhr, #erfgoedhr, #omgevinghr {
     margin-top: 100px;
 }
 
@@ -742,9 +742,6 @@ object-fit: cover;
     padding-top: 0px;
 }
 
-#omgeving-2 {
-    margin-bottom: 70px;
-}
 
 #omgeving-2 a {
     color: #7B4D00;
@@ -752,6 +749,12 @@ object-fit: cover;
 
  #omgeving-2 a:hover {
     color: #D07F00;
+}
+
+.veld img {
+    width: 100dvw;
+    height: 350px;
+    object-fit: cover;
 }
 
 /* losse pagina: privacy */
