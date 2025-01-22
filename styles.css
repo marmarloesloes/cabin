@@ -671,6 +671,25 @@ object-fit: cover;
     margin-bottom: 70px;
 }
 
+#fotocarousel {
+    margin-bottom: 30px;
+}
+
+#cabinhr {
+    margin-top: 100px;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
 /* losse pagina: erfgoed */
 
 #erfgoed {
@@ -712,6 +731,12 @@ object-fit: cover;
 
 #omgeving-1 h2 {
     padding-top: 0px;
+}
+
+.veld img {
+height: 350px;
+object-fit: cover;
+background-color: red;
 }
 
 #omgeving-2 {
@@ -901,6 +926,10 @@ object-fit: cover;
         height: 600px;
     }
 
+    #fotocarousel {
+        height: 350px;
+    }
+
     #slider {
         width: 400px;
     }
@@ -911,6 +940,10 @@ object-fit: cover;
 
     .review-card {
     height: 515px;
+    }
+
+    #fotocarousel .review-card {
+        height: auto;
     }
 
     .accordion {
@@ -1121,6 +1154,11 @@ and (orientation: landscape) {
         height: 800px;
     }
 
+    #fotocarousel {
+        width: 350px;
+        height: 250px;
+    }
+
     #slider {
         width: 250px;
     }
@@ -1141,6 +1179,10 @@ and (orientation: landscape) {
 
     .review-card {
     height: 715px;
+    }
+
+    #fotocarousel .review-card {
+        height: auto;
     }
 
     .accordion {
