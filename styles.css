@@ -1162,6 +1162,11 @@ and (orientation: landscape) {
         width: 250px;
     }
 
+    .block-fotocarousel, .cabin-dots {
+        display: none;
+    }
+
+
 
     .prev, .next {
     width: 20px;
