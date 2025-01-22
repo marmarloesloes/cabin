@@ -637,7 +637,7 @@ h3 {
 .voorzieningen {
     background-color: #6B803F;
     margin-top: 70px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     padding-top: 60px;
     padding-bottom: 30px;
 }
@@ -660,7 +660,6 @@ object-fit: cover;
 .block-img-big {
     display: flex;
     justify-content: center;
-    margin-top: 40px;
 }
 
 .block-img-big img {
@@ -668,15 +667,25 @@ object-fit: cover;
     height: auto;
     max-width: 800px;
     border-radius: 15px;
-    margin-bottom: 70px;
+    margin-top: 50px;
 }
 
 #fotocarousel {
     margin-bottom: 30px;
 }
 
-#cabinhr {
+#cabinfotos {
+    display: none;
+}
+
+#cabinhr #erfgoedhr {
     margin-top: 100px;
+}
+
+.beschrijving {
+    margin-right: auto;
+    margin-left: 15%;
+    margin-top: 5px;
 }
 
 .fade {
@@ -726,17 +735,11 @@ object-fit: cover;
 
 #omgeving-1 {
     margin-top: 100px;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
 }
 
 #omgeving-1 h2 {
     padding-top: 0px;
-}
-
-.veld img {
-height: 350px;
-object-fit: cover;
-background-color: red;
 }
 
 #omgeving-2 {
@@ -1166,7 +1169,9 @@ and (orientation: landscape) {
         display: none;
     }
 
-
+    #cabinfotos {
+        display: flex;
+    }
 
     .prev, .next {
     width: 20px;
