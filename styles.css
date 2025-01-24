@@ -751,12 +751,6 @@ object-fit: cover;
     color: #D07F00;
 }
 
-.veld img {
-    width: 100dvw;
-    height: 350px;
-    object-fit: cover;
-}
-
 /* losse pagina: privacy */
 
 #privacy {
