@@ -496,7 +496,9 @@ h1 {
     height: 340px;
 }
 
-.review-pic {    height: 70px;
+.review-pic {    
+    height: 70px;
+    width: 60px;
     overflow: hidden;
     position: absolute;
     padding-top: 10px;
