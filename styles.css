@@ -419,7 +419,7 @@ h1 {
 
 .wrapper-reviews {
     width: 800px;
-    height: 450px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -493,42 +493,34 @@ h1 {
     background-color: rgb(255, 255, 255);
     border-radius: 15px;
     padding: 20px;
-    height: auto;
+    height: 340px;
 }
 
-.review-pic {
-    width: 70px;
-    height: 70px;
+.review-pic {    height: 70px;
     overflow: hidden;
     position: absolute;
+    padding-top: 10px;
 }
 
 .review-pic img {
     height: 100%;
     width: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-    overflow: hidden;
 }
 
 .review-name {
     font-weight: bold;
-    padding-left: 80px;
     color: #7B4D00;
-}
-
-.review-date {
-    padding-left: 80px;
-    color: #7B4D00;
+    padding: 10px 0px 10px 75px;
 }
 
 .review-text {
-    padding: 35px 0px 20px 0px;
+    padding-top: 15px;
 }
 
 .review-rating {
     font-weight: bold;
     color: #7B4D00;
+    padding-left: 75px;
 }
 
 /* Instagram */
