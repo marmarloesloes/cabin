@@ -262,6 +262,7 @@ body {
 .contact {
     background-image: url("images/contactheader.jpg");
     background-color: orangered;
+    background-position: center;
     background-size: cover;
 }
 
